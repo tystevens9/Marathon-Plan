@@ -190,6 +190,7 @@
   .pace-track{position:relative;height:8px;background:var(--line);border-radius:4px;overflow:hidden;}
   .pace-fill{position:absolute;top:0;left:0;height:100%;border-radius:4px;}
   .pace-mi,.pace-km{font-family:var(--font-mono);font-size:13px;color:var(--ink-dim);text-align:right;}
+  .pace-row.mi-only{grid-template-columns:160px 1fr 140px;}
   .pace-when{grid-column:1 / -1;font-size:12.5px;color:var(--ink-dim);margin-top:2px;}
 
   /* ---------- PHASES ---------- */
@@ -484,39 +485,34 @@
     <h2>Training Paces</h2>
     <p class="lead">3:45 = 8:35/mile average. Everything else is built around that number. Bars are relative effort, not literal distance.</p>
     <div class="pace-band">
-      <div class="pace-row">
+      <div class="pace-row mi-only">
         <div class="pace-name">Easy</div>
         <div class="pace-track"><div class="pace-fill" style="width:38%;background:var(--c-phase1)"></div></div>
         <div class="pace-mi">9:45&ndash;10:15 /mi</div>
-        <div class="pace-km">6:03&ndash;6:22 /km</div>
         <div class="pace-when">Most weekday runs, recovery days.</div>
       </div>
-      <div class="pace-row">
+      <div class="pace-row mi-only">
         <div class="pace-name">Long Run</div>
         <div class="pace-track"><div class="pace-fill" style="width:48%;background:var(--c-phase2)"></div></div>
         <div class="pace-mi">9:30&ndash;10:00 /mi</div>
-        <div class="pace-km">5:54&ndash;6:13 /km</div>
         <div class="pace-when">Bulk of Saturday long runs.</div>
       </div>
-      <div class="pace-row">
+      <div class="pace-row mi-only">
         <div class="pace-name">Marathon Pace</div>
         <div class="pace-track"><div class="pace-fill" style="width:68%;background:var(--c-phase4)"></div></div>
         <div class="pace-mi">8:30&ndash;8:40 /mi</div>
-        <div class="pace-km">5:17&ndash;5:23 /km</div>
         <div class="pace-when">MP segments inside long runs, and race day itself.</div>
       </div>
-      <div class="pace-row">
+      <div class="pace-row mi-only">
         <div class="pace-name">Tempo</div>
         <div class="pace-track"><div class="pace-fill" style="width:82%;background:var(--c-phase3)"></div></div>
         <div class="pace-mi">7:50&ndash;8:05 /mi</div>
-        <div class="pace-km">4:52&ndash;5:01 /km</div>
         <div class="pace-when">Wednesday tempo workouts.</div>
       </div>
-      <div class="pace-row">
+      <div class="pace-row mi-only">
         <div class="pace-name">Interval</div>
         <div class="pace-track"><div class="pace-fill" style="width:96%;background:var(--accent)"></div></div>
         <div class="pace-mi">7:15&ndash;7:30 /mi</div>
-        <div class="pace-km">4:30&ndash;4:40 /km</div>
         <div class="pace-when">800m / 1mi repeats.</div>
       </div>
     </div>
@@ -525,40 +521,40 @@
   <!-- HEART RATE -->
   <section class="section" id="heartrate">
     <h2>Heart Rate</h2>
-    <p class="lead">Pace tells you what to aim for. Heart rate tells you whether today's body can actually deliver it &mdash; most useful on easy and long runs, where drift shows up early, especially in Miami humidity.</p>
+    <p class="lead">Pace tells you what to aim for. Heart rate tells you whether today's body can actually deliver it &mdash; most useful on easy and long runs, where drift shows up early, especially in Miami humidity. Zones below are set against a 190 bpm cap.</p>
     <div class="pace-band">
       <div class="pace-row">
         <div class="pace-name">Easy / Long Run</div>
         <div class="pace-track"><div class="pace-fill" style="width:40%;background:var(--c-phase1)"></div></div>
-        <div class="pace-mi">76&ndash;84% max HR</div>
+        <div class="pace-mi">144&ndash;160 bpm</div>
         <div class="pace-km">Zone 2</div>
         <div class="pace-when">Conversational, nose-breathing effort. If HR runs 8&ndash;10+ bpm above normal for this pace, slow down &mdash; don't push through it.</div>
       </div>
       <div class="pace-row">
         <div class="pace-name">Marathon Pace</div>
         <div class="pace-track"><div class="pace-fill" style="width:68%;background:var(--c-phase4)"></div></div>
-        <div class="pace-mi">84&ndash;88% max HR</div>
+        <div class="pace-mi">160&ndash;167 bpm</div>
         <div class="pace-km">Zone 3&ndash;4</div>
         <div class="pace-when">Comfortably strong &mdash; the effort you could hold for hours, not the effort you're fighting to hold.</div>
       </div>
       <div class="pace-row">
         <div class="pace-name">Tempo</div>
         <div class="pace-track"><div class="pace-fill" style="width:82%;background:var(--c-phase3)"></div></div>
-        <div class="pace-mi">88&ndash;92% max HR</div>
+        <div class="pace-mi">167&ndash;175 bpm</div>
         <div class="pace-km">Zone 4</div>
         <div class="pace-when">Hard but controlled &mdash; the "10K-race-in-training" feel.</div>
       </div>
       <div class="pace-row">
         <div class="pace-name">Interval</div>
         <div class="pace-track"><div class="pace-fill" style="width:96%;background:var(--accent)"></div></div>
-        <div class="pace-mi">92&ndash;97%* max HR</div>
+        <div class="pace-mi">175&ndash;184 bpm*</div>
         <div class="pace-km">Zone 5</div>
-        <div class="pace-when">Hard, breathing labored. *HR lags pace by 60&ndash;90 sec, so on short reps like 800s it often won't climb into zone until the rep is nearly over &mdash; judge these by pace and feel, not the number.</div>
+        <div class="pace-when">Hard, breathing labored. *HR lags pace by 60&ndash;90 sec, so on short reps like 800s it often won't climb this high until the rep is nearly over &mdash; judge these by pace and feel, not the number.</div>
       </div>
     </div>
 
     <div class="rules" style="margin-top:20px;">
-      <div class="rule"><b>Get a real max HR.</b> 220-minus-age can be off by 10&ndash;12 bpm. Better: the highest HR from a hard 5K/10K effort, or whatever you hit late in last January's marathon.</div>
+      <div class="rule"><b>190 bpm is your ceiling, not a target.</b> These zones are computed off that cap. If any easy run has you sitting near 160+ just to hold easy pace, that's a fatigue/heat signal, not a reason to push harder.</div>
       <div class="rule"><b>Cardiac drift is a warning light.</b> HR creeps up on long runs even at constant pace, faster in heat and humidity &mdash; exactly what Miami training and race day will bring.</div>
       <div class="rule"><b>Check morning resting HR.</b> 5&ndash;10 bpm above your normal for a couple mornings in a row usually means accumulated fatigue. Make the easy run genuinely easy that day.</div>
       <div class="rule"><b>Race day runs hot.</b> Expect HR a bit higher than training at the same pace from adrenaline and conditions &mdash; don't let it panic you into slowing down early if legs and breathing feel fine.</div>
