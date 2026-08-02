@@ -141,14 +141,14 @@
   .log-table{display:flex;flex-direction:column;gap:5px;overflow-x:auto;}
   .log-row{
     display:grid;
-    grid-template-columns:64px 84px 84px 84px 60px 1fr;
+    grid-template-columns:64px 84px 84px 60px 1fr;
     gap:14px;
     align-items:center;
     padding:11px 16px;
     background:var(--bg-card);
     border-radius:8px;
     font-size:13px;
-    min-width:600px;
+    min-width:520px;
   }
   .log-row.head{
     background:transparent;
@@ -450,7 +450,7 @@
     <p class="lead">Real runs, pulled straight from Garmin via intervals.icu. Refreshed automatically every week.</p>
 
     <!-- LIVE:SYNC:START -->
-    <div class="sync-badge"><span class="dot"></span><span>Synced Aug 2, 2026 &middot; 10 activities in the last 30 days</span></div>
+    <div class="sync-badge"><span class="dot"></span><span>Synced Aug 2, 2026 &middot; 4 runs in the last 30 days</span></div>
     <!-- LIVE:SYNC:END -->
 
     <!-- LIVE:STATS:START -->
@@ -458,23 +458,17 @@
       <div class="stat"><div class="num">11.0</div><div class="lbl">Miles, Last 7d</div></div>
       <div class="stat"><div class="num">8:50</div><div class="lbl">Avg Run Pace, 7d</div></div>
       <div class="stat"><div class="num">19.6</div><div class="lbl">Run Miles, Last 30d</div></div>
-      <div class="stat"><div class="num">6</div><div class="lbl">Strength, Last 30d</div></div>
+      <div class="stat"><div class="num">4</div><div class="lbl">Runs, Last 30d</div></div>
     </div>
     <!-- LIVE:STATS:END -->
 
     <!-- LIVE:TABLE:START -->
     <div class="log-table">
-      <div class="log-row head"><div>Date</div><div>Type</div><div class="log-num">Distance</div><div class="log-num">Pace</div><div class="log-num">Avg HR</div><div>Notes</div></div>
-      <div class="log-row"><div class="log-date">Jul 31</div><div class="log-type">Strength</div><div class="log-num">&mdash;</div><div class="log-num">&mdash;</div><div class="log-num">101</div><div class="log-note">46 min</div></div>
-      <div class="log-row"><div class="log-date">Jul 30</div><div class="log-type">Run</div><div class="log-num">6.0 mi</div><div class="log-num">8:49/mi</div><div class="log-num">155</div><div class="log-note">Charlotte Running</div></div>
-      <div class="log-row"><div class="log-date">Jul 29</div><div class="log-type">Strength</div><div class="log-num">&mdash;</div><div class="log-num">&mdash;</div><div class="log-num">105</div><div class="log-note">55 min</div></div>
-      <div class="log-row"><div class="log-date">Jul 28</div><div class="log-type">Run</div><div class="log-num">5.0 mi</div><div class="log-num">8:52/mi</div><div class="log-num">157</div><div class="log-note">Charlotte Running</div></div>
-      <div class="log-row"><div class="log-date">Jul 27</div><div class="log-type">Strength</div><div class="log-num">&mdash;</div><div class="log-num">&mdash;</div><div class="log-num">103</div><div class="log-note">56 min</div></div>
-      <div class="log-row"><div class="log-date">Jul 23</div><div class="log-type">Strength</div><div class="log-num">&mdash;</div><div class="log-num">&mdash;</div><div class="log-num">110</div><div class="log-note">52 min</div></div>
-      <div class="log-row"><div class="log-date">Jul 21</div><div class="log-type">Run</div><div class="log-num">5.0 mi</div><div class="log-num">8:53/mi</div><div class="log-num">157</div><div class="log-note">Charlotte Running</div></div>
-      <div class="log-row"><div class="log-date">Jul 20</div><div class="log-type">Strength</div><div class="log-num">&mdash;</div><div class="log-num">&mdash;</div><div class="log-num">106</div><div class="log-note">47 min</div></div>
-      <div class="log-row"><div class="log-date">Jul 17</div><div class="log-type">Run</div><div class="log-num">3.6 mi</div><div class="log-num">8:56/mi</div><div class="log-num">164</div><div class="log-note">Charlotte Running</div></div>
-      <div class="log-row"><div class="log-date">Jul 16</div><div class="log-type">Strength</div><div class="log-num">&mdash;</div><div class="log-num">&mdash;</div><div class="log-num">101</div><div class="log-note">33 min</div></div>
+      <div class="log-row head"><div>Date</div><div class="log-num">Distance</div><div class="log-num">Pace</div><div class="log-num">Avg HR</div><div>Notes</div></div>
+      <div class="log-row"><div class="log-date">Jul 30</div><div class="log-num">6.0 mi</div><div class="log-num">8:49/mi</div><div class="log-num">155</div><div class="log-note">Charlotte Running</div></div>
+      <div class="log-row"><div class="log-date">Jul 28</div><div class="log-num">5.0 mi</div><div class="log-num">8:52/mi</div><div class="log-num">157</div><div class="log-note">Charlotte Running</div></div>
+      <div class="log-row"><div class="log-date">Jul 21</div><div class="log-num">5.0 mi</div><div class="log-num">8:53/mi</div><div class="log-num">157</div><div class="log-note">Charlotte Running</div></div>
+      <div class="log-row"><div class="log-date">Jul 17</div><div class="log-num">3.6 mi</div><div class="log-num">8:56/mi</div><div class="log-num">164</div><div class="log-note">Charlotte Running</div></div>
     </div>
     <!-- LIVE:TABLE:END -->
 
